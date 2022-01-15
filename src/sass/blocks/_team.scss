@@ -1,0 +1,51 @@
+.team{
+    padding-top: 120px;
+    height: 1920px;
+    // background-color: #0066FE;
+    // img{
+    //     width: 158px;
+    // }
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        color: #0066FE;
+        text-align: center;
+    }
+    &__in{
+        display: block;
+        margin: 0 auto;
+    }
+    &__chairman{
+        display: flex;
+        width: 250px;
+        justify-content: baseline;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    &__inner{
+        position: relative;
+        // width: 360px;
+        // width: 100%;
+        margin: 20px auto;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .slick-prev, .slick-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -211px;
+        border: none;
+        background-color: #fff;
+        img{
+            height: 28px;
+        }
+    }
+    .slick-next{
+        right: -211px;
+        left: auto;
+    }
+}

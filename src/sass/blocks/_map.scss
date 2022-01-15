@@ -1,0 +1,36 @@
+.contacts{
+    background-color: #612092;
+    padding-top: 80px;
+    &_title{
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 80px;
+    }
+    .map-list{
+        ul{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    .map{
+        svg{
+            width: 800px;
+            transition: all 0.15s;
+        }
+    }
+   
+    .map-info{
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            color: #FFFFFF;
+            span{
+                font-weight: 700;
+                color: #0091FE;
+            }
+        }
+    }
+}
