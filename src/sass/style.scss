@@ -27,10 +27,11 @@
 		letter-spacing: 0.7em;
 		color: #000000;
 	}
-	hr {
+	.promo_divider {
 		width: 99px;
 		margin: 40px auto 16px auto;
-		border: 2px solid #612092;
+		background-color: #612092;
+		border: 1.5px solid #612092;
 	}
 	.promo_subtitle {
 		font-weight: 500;
@@ -224,8 +225,9 @@
 			}
 			.why_divider {
 				width: 50px;
-				height: 0px;
-				border: 1.5px solid #000000;
+				margin-top: 15px;
+				background-color: #000000;
+				border: 0.5px solid #000000;
 			}
 		}
 	}

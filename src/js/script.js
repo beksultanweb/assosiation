@@ -6,23 +6,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="./icons/prev.svg"></img></button>',
         responsive:[
             {
-                breakpoint: 992,
-                settings:{
-                    dots: true,
-                    arrows: false
-                }
-            }
-        ]
-    });
-	$('.team__inner').slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-		prevArrow: '<button type="button" class="slick-prev"><img src="./icons/next.svg"></img></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="./icons/prev.svg"></img></button>',
-		slidesToShow: 5,
-        responsive:[
-            {
-                breakpoint: 992,
+                breakpoint: 1024,
                 settings:{
                     dots: true,
                     arrows: false

@@ -14,22 +14,6 @@ $(document).ready(function(){
             }
         ]
     });
-	$('.team__inner').slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-		prevArrow: '<button type="button" class="slick-prev"><img src="./icons/next.svg"></img></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="./icons/prev.svg"></img></button>',
-		slidesToShow: 5,
-        responsive:[
-            {
-                breakpoint: 992,
-                settings:{
-                    dots: true,
-                    arrows: false
-                }
-            }
-        ]
-    });
 	/*  Burger  */
 	$('.header__burger').click(function(event){
 		$('.header__burger, .header__menu').toggleClass('active');
