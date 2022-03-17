@@ -1,18 +1,21 @@
 footer{
     background-color: #0066FE;
-    padding: 100px;
+    padding-top: 100px;
     min-height: 550px;
     .logo{
+        // width: 100%;
         img{
             width: 120px;
         }
         display: flex;
+        justify-content: center;
         align-items: center;
         gap:20px;
         .txt{
             display: flex;
             flex-direction: column;
             .title{
+                // width: 100%;
                 font-weight: 700;
                 font-size: 18px;
                 text-align: center;
@@ -33,16 +36,38 @@ footer{
         gap:30px;
         align-items: center;
         justify-content: center;
-        a{
-            text-decoration: none;
-            font-style: normal;
+        // a{
+        //     text-decoration: none;
+        //     font-style: normal;
+        //     font-weight: 700;
+        //     font-size: 24px;
+        //     color: #FFFFFF;
+        // }
+        // a:hover{
+        //     text-decoration: underline;
+        // }
+        .lang-switcher {
+            pointer-events: auto;
+            color: #fff;
+            // font-style: 700;
             font-weight: 700;
-            font-size: 24px;
-            color: #FFFFFF;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
+            font-size: 18px;
+            cursor: pointer;
+            pointer-events: auto;
+          }
+          .lang-switcher:hover {
+            // color: #b33;
+            border-bottom: 1px solid;
+          }
+            /* Выделяем активную переключалку тоже с помощью классов родителя */
+        //   .kz .lang-switcher--kz,
+        //   .ru .lang-switcher--ru {
+        //     color: #F48028;
+        //     border-bottom: 1px solid;
+        //     // border-bottom: none;
+        //     font-weight: bold;
+        //     cursor: default;
+        //   }
     }
     .social{
         display: flex;
@@ -67,10 +92,12 @@ footer{
         // text-align: ;
     }
     .footer__link{
-        font-weight: 400;
-        font-size: 20px;
-        
-        color: #FFFFFF;
+        a{
+            font-weight: 400;
+            font-size: 20px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
         .pageup{
             display: block;
             color: #FFFFFF;
@@ -97,12 +124,15 @@ footer{
         margin-top: 80px;
         font-weight: 400;
         font-size: 20px;
+        margin-bottom: 50px;
+        // text-decoration: none;
         color: #ffffff;
         a{
             display: block;
             text-decoration: underline;
             color: #ffffff;
             text-align: right;
+            // margin-bottom: 40px;
         }
         a:hover{
             text-decoration: underline;
@@ -121,15 +151,18 @@ footer{
         }
         .footer__link{
             margin-top: 20px;
-            .pageup{
-                img{
-                    top: 10px;
-                    right: -35px;
-                }
-            }
+            // .pageup{
+            //     img{
+            //         top: 10px;
+            //         right: -35px;
+            //     }
+            // }
+        }
+        .lang{
+            margin-bottom: 60px;
         }
         .social{
-            margin-top: 60px;
+            // margin-top: 60px;
             display: flex;
             justify-content: center;
             gap: 50px;
@@ -139,10 +172,26 @@ footer{
 @media (max-width: 768px){
     footer{
         .requisites{
-            text-align: center;
+            // text-align: center;
             a{
                 text-align: center;
             }
+        }
+    }
+}
+@media (max-width: 581px){
+    footer{
+        .logo{
+            .txt{
+                .title{
+                    // letter-spacing: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .footer__list{
+            padding-left: 0;
+            // width: 300px;
         }
     }
 }

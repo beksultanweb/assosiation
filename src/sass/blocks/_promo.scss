@@ -1,0 +1,161 @@
+.promo {
+	position: relative;
+	.main_logo {
+		width: 144px;
+		display: block;
+		margin: 120px auto 28px auto;
+	}
+	.promo_title {
+		font-weight: 700;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: 0.9em;
+		color: #000000;
+		margin-bottom: 15px;
+	}
+	h1 {
+		font-weight: 400;
+		font-size: 14px;
+		text-align: center;
+		letter-spacing: 0.7em;
+		color: #000000;
+	}
+	.promo_divider {
+		width: 99px;
+		margin: 40px auto 16px auto;
+		background-color: #612092;
+		border: 1.5px solid #612092;
+	}
+	.promo_subtitle {
+		max-width: 500px;
+		margin: 0 auto;
+		font-weight: 500;
+		font-size: 18px;
+		text-align: center;
+		color: #612092;
+	}
+	.down {
+		display: block;
+		margin: 44px auto;
+	}
+	.mph1 {
+		position: absolute;
+		left: 121px;
+		top: 232px;
+		width: 262px;
+		height: 178px;
+		filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+	}
+	.mph2 {
+		position: absolute;
+		left: 154px;
+		top: 70px;
+		width: 262px;
+		height: 178px;
+		filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+	}
+	.mph3 {
+		position: absolute;
+		right: 121px;
+		top: 232px;
+		width: 262px;
+		height: 178px;
+		filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+	}
+	.mph4 {
+		position: absolute;
+		right: 154px;
+		top: 70px;
+		width: 262px;
+		height: 178px;
+		z-index: -1;
+		filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+	}
+	.round1 {
+		position: absolute;
+		width: 57px;
+		height: 57px;
+		left: 385px;
+		top: 45px;
+		z-index: 1;
+		border-radius: 50%;
+		border: 3px solid #0066FE;
+	}
+	.round2 {
+		position: absolute;
+		width: 49px;
+		height: 49px;
+		left: 130px;
+		top: 210px;
+		z-index: 1;
+		border-radius: 50%;
+		border: 3px solid #0066FE;
+	}
+	.round3 {
+		position: absolute;
+		width: 41px;
+		height: 41px;
+		left: 310px;
+		top: 390px;
+		z-index: 1;
+		border-radius: 50%;
+		border: 3px solid #F48028;
+	}
+	.round4 {
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		right: 391px;
+		top: 100px;
+		z-index: 1;
+		border-radius: 50%;
+		border: 3px solid #F4710F;
+	}
+	.round5 {
+		position: absolute;
+		width: 74px;
+		height: 74px;
+		right: 241px;
+		top: 374px;
+		z-index: 1;
+		border-radius: 50%;
+		border: 3px solid #0494FC;
+	}
+	.round6 {
+		position: absolute;
+		width: 36px;
+		height: 36px;
+		right: 105px;
+		top: 210px;
+		z-index: 1;
+		border-radius: 50%;
+		border: 3px solid #F4710F;
+	}
+}
+@media (max-width: 1360px){
+    .promo{
+        .desktop_details{
+            display: none;
+        }
+    }
+}
+@media (max-width: 576px){
+	.promo{
+		.main_logo{
+			width: 100px;
+		}
+		.promo_title{
+			font-size: 18px;
+		}
+		.promo_subtitle{
+			font-size: 16px;
+		}
+	}
+}
+@media (max-width: 360px){
+	.promo{
+		.promo_title{
+			font-size: 16px;
+		}
+	}
+}

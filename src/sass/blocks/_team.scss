@@ -1,6 +1,6 @@
 .team{
     padding-top: 120px;
-    height: 2420px;
+    min-height: 2420px;
     &__name, &__details{
         font-weight: 400;
         font-size: 18px;
@@ -19,13 +19,14 @@
     }
     &__in{
         text-align: center;
-        position: relative;
+        // position: relative;
     }
     img{
+        margin-top: 20px;
         width: 200px;
         height: 250px;
         object-fit: cover;
-        object-position: top;
+        // object-position: top;
     }
     &__chairman{
         .chairman{
@@ -33,16 +34,22 @@
                 margin-top: 5px;
             }
             text-align: center;
+            margin-bottom: 10px;
+        }
+        img{
+            width: 250px;
+            height: 300px;
         }
         // display: flex;
         // position: absolute;
-        width: 420px;
+        max-width: 460px;
         // justify-content: baseline;
         // flex-direction: column;
         margin: 60px auto 0 auto;
         // text-align: center;
     }
     &__inner{
+        margin: 0 auto;
         .slick-dots{
             display: flex;
             align-items: center;
@@ -67,23 +74,14 @@
                 border: none;
             }
         }
-    //     position: relative;
-    //     width: 70%;
-    //     margin: 20px auto;
     }
-    // .slick-prev, .slick-next{
-    //     position: absolute;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    //     left: -211px;
-    //     border: none;
-    //     background-color: #fff;
-    //     img{
-    //         height: 28px;
-    //     }
-    // }
-    // .slick-next{
-    //     right: -211px;
-    //     left: auto;
-    // }
+}
+@media (max-width: 768px){
+    .team__in{
+        svg{
+            line{
+                stroke-width: 2;
+            }
+        }
+    }
 }

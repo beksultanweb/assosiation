@@ -4,14 +4,21 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         dots: true,
         arrows: false,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 4,
         responsive:[
             {
-                breakpoint: 992,
+                breakpoint: 1024,
                 settings:{
-                    dots: true,
-                    arrows: false
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 465,
+                settings:{
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
