@@ -197,7 +197,7 @@ $mapLinks.forEach(el => {
 let select = function () {
     let selectHeader = document.querySelectorAll('.selected-lang');
     let selectItem = document.querySelectorAll('.lang-tochoose');
-	let selectItemfooter = document.querySelectorAll('.lang-switcher');
+	// let selectItemfooter = document.querySelectorAll('.lang-switcher');
 
     selectHeader.forEach(item => {
         item.addEventListener('click', selectToggle);
@@ -207,9 +207,9 @@ let select = function () {
         item.addEventListener('click', selectChoose);
     });
 
-	selectItemfooter.forEach(item2 => {
-        item2.addEventListener('click', selectChoose);
-    });
+	// selectItemfooter.forEach(item2 => {
+    //     item2.addEventListener('click', selectChoose);
+    // });
 
     function selectToggle() {
         this.parentElement.classList.toggle('active');
